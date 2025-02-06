@@ -48,22 +48,20 @@
 
   <!-- CONTAINER PRINCIPALE  -->
 
-  <main class="d-flex flex-column container mt-3 col-lg-12 col-md-10">
-    <div class="d-flex justify-content-between">
+  <main class="mt-4 container ">
+    <div class="d-flex px-2 justify-content-between">
       <h2 style="font-weight: 200;">Catalogo Libri</h2>
       <button class="btn btn-primary">Aggiungi Libro</button>
     </div>
 
-
     <!-- Table -->
-    <div class="mt-4 pd-2 ">
-      <table class="table table-striped align-middle">
+    <div class="mt-4 container">
+      <table class="table table-striped">
         <thead>
           <tr>
             <th scope="col">Titolo</th>
-            <th scope="col">Data prestito</th>
+            <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
             <th scope="col">Stato</th>
-            <!-- pk si vede una barra storta sotto azioni??? -->
             <th scope="col">Azioni</th>
           </tr>
         </thead>
@@ -72,37 +70,37 @@
         <tbody>
           <tr>
             <th scope="row"> I pilastri della Terra</th>
-            <td>-</td>
-            <td> <button class="btn btn-success">Disponibile</button> </td>
-            <td style="display: flex;">
-              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button"></i>
-                <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row"> I promessi sposi</th>
-            <td>-</td>
+            <td class="d-none d-md-table-cell">-</td>
             <td> <button class="btn btn-success">Disponibile</button> </td>
             <td>
-              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button">
+              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button></i>
               <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
             </td>
           </tr>
           <tr>
+            <th scope="row"> I promessi sposi</th>
+            <td class="d-none d-md-table-cell">-</td>
+            <td><button class="btn btn-success">Disponibile</button> </td>
+            <td>
+              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
+                <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
+            </td>
+          </tr>
+          <tr>
             <th scope="row"> Il signore degli anelli</th>
-            <td>-</td>
+            <td class="d-none d-md-table-cell">-</td>
             <td> <button class="btn btn-warning">in Prestito</button> </td>
             <td>
-              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button">
+              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
                 <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
             </td>
           </tr>
           <tr>
             <th scope="row"> Harry Potter e la pietra filosofale</th>
-            <td>-</td>
+            <td class="d-none d-md-table-cell">-</td>
             <td> <button class="btn btn-danger">Non disponibile</button> </td>
             <td>
-              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button">
+              <button class="btn btn-outline-secondary"><i class="bi bi-pencil-fill"></i></button>
                 <button class="btn btn-outline-secondary"><i class="bi bi-trash-fill"></i></button>
             </td>
           </tr>
